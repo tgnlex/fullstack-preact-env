@@ -5,5 +5,5 @@ import { Link } from "./Link";
 import { Node } from "./Node";
 import { Resource } from "./Resource";
 import { Text } from "./Text";
-
-export {Box, Button, Item, Link, Node, Resource, Text};
+import {Row} from "./Row";
+export {Box, Button, Item, Row, Link, Node, Resource, Text};

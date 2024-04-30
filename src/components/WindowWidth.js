@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'preact/hooks';
-import {Text} from './_BaseExporter.js'; 
+import {Text} from './atomic/_exporter.js'; 
 function WindowWidth(props) {
   const [width, setWidth] = useState(0);
 

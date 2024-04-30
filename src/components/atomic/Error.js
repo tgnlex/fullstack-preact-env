@@ -1,5 +1,5 @@
 import {useErrorBoundary} from 'preact/hooks';
-import {Node, Text, Button} from './_BaseExporter';
+import {Node, Text, Button} from './_exporter';
 
 const Error = (id) => {
   const [error, reset] = useErrorBoundary(

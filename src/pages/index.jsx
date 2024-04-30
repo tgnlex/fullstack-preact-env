@@ -1,5 +1,5 @@
 import './home.css';
-import {Item, Box} from '../../components/base/_BaseExporter';
+import {Item, Box} from '../components/atomic/_exporter';
 function Home() {
 	return (
 		<div class="home">

@@ -1,4 +1,4 @@
-import {Node} from './_BaseExporter.js'
+import {Node} from './_exporter.js'
  const style = {display: "flex", flexDirection: "row"};
 
 const Row = (props) => {

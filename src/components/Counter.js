@@ -1,5 +1,5 @@
-import {countReducer} from '../lib/reducers/countReducer.js';
-import { Button } from './base/_BaseExporter';
+import {countReducer} from '../reducers/countReducer.js';
+import { Button } from './atomic/_exporter.js';
 import {useReducer} from 'preact/hooks';
 function Counter() {;
   const initialState = 0;

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Header } from './components/layout/Header.jsx';
-import { Footer } from './components/layout/Footer.jsx';
+import { Header } from './components/Navbar.jsx';
+import { Footer } from './components/atomic/Footer.jsx';
 import './layout.css';
 
 const Layout = ({children}) => {

@@ -1,4 +1,4 @@
-import {Link, Text} from './_BaseExporter.js';
+import {Link, Text} from './_exporter.js';
 const Resource = ({props}, url, description) => {
   const style = {
       padding: "0.75rem 1.5rem",
