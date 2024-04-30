@@ -5,7 +5,19 @@ function TodoList() {
 
 
   return (
-    <div>todolist</div>
+    <div>
+      <input />
+      <button></button>
+      <ul>
+        {todos.value.map(todo => (
+          <li>
+            <button>
+              
+            </button>
+          </li>
+        ))}        
+      </ul>
+    </div>
   )
 }
 
