@@ -1,20 +1,15 @@
 import {useErrorBoundary} from 'preact/hooks';
-import {Node, Text, Button} from './_exporter';
 
 const Error = (id) => {
   const [error, reset] = useErrorBoundary(
     error => console.log(error.message),
   );
-  const nodeProps ={
-    classes: "error",
-    style: {},
-  };
   if (error) {
     return (
-      <Node id={id} props={nodeProps}>
+      <div id={id} className="error">
         <Text content={error.message} />
         <Button action={reset} text={"Error: Try Again"} />
-      </Node>
+      </div>
     )
   }
 }
