@@ -3,7 +3,6 @@ import { text } from "../signals/text";
 import { todos } from "../signals/todos";
 function TodoList() {
   const handleIn = event => (text.value = event.currentTarget.value);
-
   return (
     <div>
       <input value={text.value} onInput={handleIn} />
@@ -19,5 +18,4 @@ function TodoList() {
     </div>
   )
 }
-
 export {TodoList}
