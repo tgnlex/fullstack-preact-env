@@ -1,4 +1,4 @@
-export function NotFound() {
+const NotFound = () => {
 	return (
 		<section>
 			<h1>404: Not Found</h1>
@@ -6,3 +6,4 @@ export function NotFound() {
 		</section>
 	);
 }
+export {NotFound};

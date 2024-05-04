@@ -1,21 +1,13 @@
-import {deleteTodo} from '../functions/deleteTodo.jsx';
-import { text } from "../signals/text";
-import { todos } from "../signals/todos";
-function TodoList() {
-  const handleIn = event => (text.value = event.currentTarget.value);
+import { TodoForm } from '../components/todo/todoForm.jsx';
+import { TodoList } from '../components/todo/todoList.jsx';
+import {text, todos, completed} from '../_lib/signals/todo.js';
+function TodoPage() {
   return (
-    <div>
-      <input value={text.value} onInput={handleIn} />
-      <button></button>
-      <ul>
-        {todos.value.map(todo => (
-          <li>
-            {todo.text} {' '}
-            <button onClick={deleteTodo}>x</button>
-          </li>
-        ))}        
-      </ul>
-    </div>
+    <main className="todo--main">
+      <h1 className="todo--heading">Todo List</h1>
+      <TodoList/>      
+      <TodoForm/>
+    </main>
   )
 }
-export {TodoList}
+export {TodoPage}

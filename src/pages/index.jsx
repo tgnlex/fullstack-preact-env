@@ -1,17 +1,10 @@
 import './home.css';
-import {Item, Box} from '../components/atomic/_exporter';
-function Home() {
+const HomePage = () => {
 	return (
 		<div class="home">
-			<Box 
-			 id={1}
-			 height={100}
-			 width={100}
-			 color={"red"}
-			 props={undefined}>
-			</Box>
+			<h1>Home</h1>
 		</div>
 	);
 }
 
-export {Home};
+export {HomePage};

@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'preact/hooks';
-import {Text} from './atomic/_exporter.js'; 
 function WindowWidth(props) {
   const [width, setWidth] = useState(0);
 
@@ -11,7 +10,7 @@ function WindowWidth(props) {
     return () => window.removeEventListener('resize', onResize);
   }, []);
   const content = `Window width: ${width}`;
-  return <Text content={content} />
+  return <p>{content}</p>
 }
 
 export {WindowWidth};

@@ -1,11 +1,11 @@
-import {countReducer} from '../reducers/countReducer.js';
-import { Button } from './atomic/_exporter.js';
+import {countReducer} from '../../_lib/reducers/countReducer.js';
+import { Button } from './Btn';
 import {useReducer} from 'preact/hooks';
 function Counter() {;
   const initialState = 0;
   const [count, dispatch] = useReducer(countReducer, initialState)
   return (
-    <div>w
+    <div>
       <p>Counter: {count}</p>
       <Button action={() => dispatch('increment')} text={"Increment"} />
       <Button action={() => dispatch('decrement')} text={"decrement"} />
